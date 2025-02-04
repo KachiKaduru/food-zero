@@ -1,12 +1,6 @@
 import "@/app/_styles/globals.css";
-import { Rufina } from "next/font/google";
 import Footer from "./_components/Footer";
-
-const rufina = Rufina({
-  subsets: ["latin"],
-  display: "swap",
-  weight: ["400", "700"],
-});
+import { rufina } from "./_fonts/fonts";
 
 export const metadata = {
   title: {
