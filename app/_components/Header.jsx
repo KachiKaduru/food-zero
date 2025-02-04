@@ -3,11 +3,17 @@ import Image from "next/image";
 
 export default function Header({ img }) {
   return (
-    <div className="h-[80dvh] w-full relative bg-[#00000075]">
+    <header className="h-[70dvh] w-full relative bg-[#00000075]">
       {img && (
-        <Image src={img} fill className="object-cover object-center -z-10" alt="Header image" />
+        <Image
+          src={img}
+          fill
+          className="object-cover object-center -z-10"
+          alt="Header image"
+          priority
+        />
       )}
       <NavigationBar />
-    </div>
+    </header>
   );
 }

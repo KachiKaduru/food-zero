@@ -1,5 +1,6 @@
 import "@/app/_styles/globals.css";
 import { Rufina } from "next/font/google";
+import Footer from "./_components/Footer";
 
 const rufina = Rufina({
   subsets: ["latin"],
@@ -20,6 +21,7 @@ export default function RootLayout({ children }) {
     <html>
       <body className={rufina.className}>
         <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );

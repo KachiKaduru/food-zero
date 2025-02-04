@@ -1,10 +1,14 @@
-import Header from "./_components/Header";
+import NavigationBar from "./_components/NavigationBar";
 
 export default function Page() {
   return (
     <div>
-      <Header />
-      <h1 className="">FOOD ZERO</h1>
+      <main>
+        <NavigationBar />
+        <h1 className="">FOOD ZERO</h1>
+      </main>
+
+      <section></section>
     </div>
   );
 }
