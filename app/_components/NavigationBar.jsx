@@ -3,10 +3,10 @@ import Logo from "./Logo";
 
 export default function NavigationBar() {
   return (
-    <nav className="flex justify-between items-center z-10 px-[100px]">
+    <nav className="flex justify-between items-center z-10 py-12 px-[100px]">
       <Logo />
 
-      <ul className="flex gap-4 text-white">
+      <ul className="flex gap-4 text-white text-xl">
         <li>
           <Link href="/menu">Menu</Link>
         </li>

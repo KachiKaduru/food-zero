@@ -1,9 +1,10 @@
 import NavigationBar from "@/app/_components/NavigationBar";
 import Image from "next/image";
+import Container from "./Container";
 
-export default function Header({ img }) {
+export default function Header({ img, children, className = "" }) {
   return (
-    <header className="h-[70dvh] w-full relative bg-[#00000075]">
+    <header className="h-[80dvh] w-full relative bg-[#00000075] text-accent-50">
       {img && (
         <Image
           src={img}
@@ -14,6 +15,8 @@ export default function Header({ img }) {
         />
       )}
       <NavigationBar />
+
+      <Container className={`${className}`}>{children}</Container>
     </header>
   );
 }
