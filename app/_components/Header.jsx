@@ -4,7 +4,7 @@ import Container from "./Container";
 
 export default function Header({ img, children, className = "" }) {
   return (
-    <header className="h-[80dvh] w-full relative bg-[#00000075] text-accent-50">
+    <header className="h-[95dvh] w-full relative bg-[#00000075] text-accent-50">
       {img && (
         <Image
           src={img}
@@ -16,7 +16,7 @@ export default function Header({ img, children, className = "" }) {
       )}
       <NavigationBar />
 
-      <Container className={`${className}`}>{children}</Container>
+      <Container className={`${className} mt-10`}>{children}</Container>
     </header>
   );
 }
