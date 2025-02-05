@@ -4,7 +4,6 @@ import Heading from "../_components/Heading";
 import Container from "../_components/Container";
 import { lato } from "../_fonts/fonts";
 import Image from "next/image";
-import ReservationForm from "../_components/ReservationForm";
 
 export const metadata = {
   title: "About us",
@@ -45,8 +44,6 @@ export default function AboutPage() {
           </div>
         </Container>
       </section>
-
-      <ReservationForm />
     </div>
   );
 }

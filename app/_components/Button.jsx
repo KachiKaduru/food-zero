@@ -4,5 +4,9 @@ const types = {
 };
 
 export default function Button({ type = "normal", children, className = "" }) {
-  return <button className={`${types[type] || types.normal} ${className}`}>{children}</button>;
+  return (
+    <button className={`${types[type] || types.normal} ${className} transition-all`}>
+      {children}
+    </button>
+  );
 }
