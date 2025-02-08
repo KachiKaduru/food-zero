@@ -7,11 +7,8 @@ export default function Page() {
   return (
     <main className="bg-primary-300">
       <NavigationBar />
-
-      <Container>
-        <HomeHeader />
-        <HomeMenuSection />
-      </Container>
+      <HomeHeader />
+      <HomeMenuSection />
     </main>
   );
 }

@@ -1,26 +1,36 @@
+import Image from "next/image";
+import { menuData } from "../_lib/placeholderData";
 import Container from "./Container";
 import Heading from "./Heading";
+import MenuItem from "./MenuItem";
 import Subtext from "./Subtext";
+
+import sectionImg from "@/public/images/home/menu-section-img.png";
+import ScrollEffectComponent from "./ScrollEffectComponent";
 
 export default function HomeMenuSection() {
   return (
-    <section className="bg-accent-50 pt-44 pb-52">
-      <Container>
-        <div className="mb-36">
-          <Heading type="h1">Our menu</Heading>
-          <Subtext>This is a section of your menu. Give your section a brief description</Subtext>
-        </div>
+    <section className="bg-accent-50 pt-44 pb-52 relative">
+      <Image
+        src={sectionImg}
+        alt="Olive branch croner image"
+        className="absolute scale-[0.85] -top-[67px] -right-[66px] "
+      />
 
-        <div>
-          <div>
-            <Heading type="h4" className="border-b border-accent-300 border-dashed text-right p-3">
-              $20
-            </Heading>
-            <Heading type="h3"> Lorem ipsum dolor sit amet.</Heading>
-            <Subtext>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </Subtext>
+      <ScrollEffectComponent>
+        <Container>
+          <div className="mb-36">
+            <Heading type="h1">Our menu</Heading>
+            <Subtext>This is a section of your menu. Give your section a brief description</Subtext>
           </div>
-        </div>
-      </Container>
+
+          <div className="grid grid-cols-2 gap-x-[60px] gap-y-24 items-start">
+            {menuData.slice(0, 4).map((item) => (
+              <MenuItem item={item} key={item.id} />
+            ))}
+          </div>
+        </Container>
+      </ScrollEffectComponent>
     </section>
   );
 }
