@@ -1,14 +1,17 @@
+import Container from "./_components/Container";
+import HomeHeader from "./_components/HomeHeader";
+import HomeMenuSection from "./_components/HomeMenuSection";
 import NavigationBar from "./_components/NavigationBar";
 
 export default function Page() {
   return (
-    <div>
-      <main>
-        <NavigationBar />
-        <h1 className="">FOOD ZERO</h1>
-      </main>
+    <main className="bg-primary-300">
+      <NavigationBar />
 
-      <section></section>
-    </div>
+      <Container>
+        <HomeHeader />
+        <HomeMenuSection />
+      </Container>
+    </main>
   );
 }
