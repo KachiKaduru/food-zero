@@ -1,6 +1,8 @@
-import Header from "@/app/_components/Header";
-import headerImg from "@/public/images/menu-header.jpeg";
-import Heading from "../_components/Heading";
+import ReservationMini from "../_components/ReservationMini";
+import MenuHeader from "./MenuHeader";
+import MenuCategory from "./MenuCategory";
+import { categoryData } from "../_lib/placeholderData";
+import Container from "../_components/Container";
 
 export const metadata = {
   title: "Our Menu",
@@ -8,18 +10,14 @@ export const metadata = {
 
 export default function MenuPage() {
   return (
-    <div>
-      <Header img={headerImg} className="grid grid-cols-2">
-        <div>
-          <Heading type="hero" className="mb-12">
-            View Our New Menu
-          </Heading>
-          <Heading type="h5">The freshest ingredients for you every day</Heading>
-        </div>
-        <div></div>
-      </Header>
-
-      <h2>Menu page</h2>
-    </div>
+    <>
+      <MenuHeader />
+      <Container>
+        {categoryData.map((category, i) => (
+          <MenuCategory key={i} item={category} />
+        ))}
+      </Container>
+      <ReservationMini />
+    </>
   );
 }
