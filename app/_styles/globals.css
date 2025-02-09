@@ -19,3 +19,7 @@
   transform: translateY(8rem);
   scale: 0.8;
 }
+
+.w-50vw {
+  width: 50dvw;
+}

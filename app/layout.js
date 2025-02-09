@@ -5,7 +5,7 @@ import { rufina } from "./_fonts/fonts";
 export const metadata = {
   title: {
     template: "%s | Food Zero",
-    default: "Welcome | Food Zero",
+    default: "Food Zero",
   },
   description: "",
 };

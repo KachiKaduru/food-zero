@@ -13,8 +13,8 @@ export default function HomeMenuSection() {
     <section className="bg-accent-50 pt-44 pb-52 relative">
       <Image
         src={sectionImg}
-        alt="Olive branch croner image"
-        className="absolute scale-[0.85] -top-[67px] -right-[66px] "
+        alt="Olive branch corner image"
+        className="absolute top-0 right-0 w-50vw"
       />
 
       <ScrollEffectComponent>
