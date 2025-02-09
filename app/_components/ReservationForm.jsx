@@ -5,6 +5,7 @@ import Container from "./Container";
 import Heading from "./Heading";
 import Input from "./Input";
 import ScrollEffectComponent from "./ScrollEffectComponent";
+import Subtext from "./Subtext";
 
 export default function ReservationForm() {
   return (
@@ -14,7 +15,7 @@ export default function ReservationForm() {
           <MintLeaf className="absolute -top-40 scale-90" />
           <div className="w-fit mx-auto ">
             <Heading type="h1">Make a reservation</Heading>
-            <p className={`${lato.className} text-xl mt-4`}>Get in touch with the restaurant</p>
+            <Subtext className="mt-4">Get in touch with the restaurant</Subtext>
           </div>
 
           <form action="" className="grid gap-11 auto-fill">
@@ -31,7 +32,7 @@ export default function ReservationForm() {
               <Input type="tel" placeholder="Phone number" name="phoneNumber" />
             </fieldset>
             <fieldset>
-              <Input type="date" name="firstName" />
+              <Input type="date" name="date" />
             </fieldset>
             <fieldset>
               <Input type="time" name="time" />

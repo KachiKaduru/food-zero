@@ -7,7 +7,7 @@ import { Leaf } from "../_lib/icons";
 
 export default function HomeChefSection() {
   return (
-    <section className="bg-primary-50 pt-44">
+    <section className="bg-primary-50 pt-40">
       <Container className="grid grid-cols-2 gap-[60px]">
         <div className="relative w-full z-20">
           <Leaf type="mini" className="absolute -top-[100px] -left-10 w-[45%] z-10" />

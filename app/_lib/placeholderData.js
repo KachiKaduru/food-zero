@@ -1,3 +1,5 @@
+import { Carrot, Fish, Fruit } from "./icons";
+
 export const menuData = [
   {
     id: 1,
@@ -82,5 +84,23 @@ export const menuData = [
     price: 100,
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
     category: "fruits",
+  },
+];
+
+export const featuresData = [
+  {
+    title: "Premium Quality",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque congue arcu",
+    icon: <Fish />,
+  },
+  {
+    title: "Seasonal Vegetables",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque congue arcu",
+    icon: <Carrot />,
+  },
+  {
+    title: "Fresh Fruit",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque congue arcu",
+    icon: <Fruit />,
   },
 ];
