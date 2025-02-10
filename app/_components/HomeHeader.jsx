@@ -1,21 +1,50 @@
+import Image from "next/image";
 import Container from "./Container";
 import Heading from "./Heading";
+import Subtext from "./Subtext";
+
+import bottomImgOne from "@/public/images/home/bottom-img-1.jpeg";
+import bottomImgTwo from "@/public/images/home/bottom-img-2.jpeg";
 
 export default function HomeHeader() {
   return (
-    <main>
-      <Container>
+    <>
+      <Container className="pb-40 text-accent-50">
         <div>
-          <Heading type="hero" className="text-accent-50">
-            Healthy Eating is important part of lifestyle
-          </Heading>
+          <Heading type="hero">Healthy Eating is important part of lifestyle</Heading>
         </div>
 
-        <div className="grid grid-cols-[0.6fr_0.4fr]">
-          <div className="flex-col"></div>
-          <div className="flex-col"></div>
+        <div className="grid grid-cols-2 gap-12">
+          <div className="flex-col">
+            <div className="relative h-[420px] mb-10">
+              <Image
+                src={bottomImgOne}
+                alt="Fruit salad bowl"
+                fill
+                className="object-cover object-center"
+              />
+            </div>
+
+            <div>
+              <Heading type="h3" className="mb-10 w-[60%] leading-tight">
+                Start to plan your diet today
+              </Heading>
+              <Subtext color="accent-50">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque congue arcu
+              </Subtext>
+            </div>
+          </div>
+
+          <div className=" flex-col w-[65%] ml-auto">
+            <Subtext color="accent-50" className="mb-14">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque congue arcu
+            </Subtext>
+            <div className="relative h-[530px]">
+              <Image src={bottomImgTwo} alt="Accessories" fill className="object-center" />
+            </div>
+          </div>
         </div>
       </Container>
-    </main>
+    </>
   );
 }
