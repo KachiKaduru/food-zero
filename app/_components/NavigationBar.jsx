@@ -8,7 +8,7 @@ export default function NavigationBar() {
       <Container className="flex justify-between items-center ">
         <Logo />
 
-        <ul className="flex gap-4 text-white text-xl">
+        <ul className="flex gap-10 text-white text-xl">
           <li>
             <Link href="/menu">Menu</Link>
           </li>

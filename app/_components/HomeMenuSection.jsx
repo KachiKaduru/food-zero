@@ -4,9 +4,9 @@ import Container from "./Container";
 import Heading from "./Heading";
 import MenuItem from "./MenuItem";
 import Subtext from "./Subtext";
+import ScrollEffectComponent from "./ScrollEffectComponent";
 
 import sectionImg from "@/public/images/home/menu-section-img.png";
-import ScrollEffectComponent from "./ScrollEffectComponent";
 
 export default function HomeMenuSection() {
   return (
