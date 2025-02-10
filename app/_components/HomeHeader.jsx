@@ -3,6 +3,7 @@ import Container from "./Container";
 import Heading from "./Heading";
 import Subtext from "./Subtext";
 
+import headerImg from "@/public/images/home/header-img.jpeg";
 import bottomImgOne from "@/public/images/home/bottom-img-1.jpeg";
 import bottomImgTwo from "@/public/images/home/bottom-img-2.jpeg";
 
@@ -10,8 +11,13 @@ export default function HomeHeader() {
   return (
     <>
       <Container className="pb-40 text-accent-50">
-        <div>
+        <div className="grid grid-cols-[0.55fr_0.45fr] mb-40">
           <Heading type="hero">Healthy Eating is important part of lifestyle</Heading>
+          <div className="relative">
+            <div className="relative h-[628px]">
+              <Image src={headerImg} alt="Image" fill className="object-cover object-top" />
+            </div>
+          </div>
         </div>
 
         <div className="grid grid-cols-2 gap-12">

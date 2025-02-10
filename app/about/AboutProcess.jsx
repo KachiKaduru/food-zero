@@ -30,7 +30,7 @@ export default function AboutProcess() {
                 />
               </div>
 
-              <div className="justify-items-center">
+              <div className="place-self-center">
                 <Heading type="h2">01.Slice</Heading>
                 <Subtext>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus lorem id penatibus
