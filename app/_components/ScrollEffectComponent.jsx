@@ -1,6 +1,6 @@
 "use client";
 
-import useScrollInView from "@/app/_lib/useScrollInView";
+import useScrollInView from "@/app/_hooks/useScrollInView";
 
 export default function ScrollEffectComponent({ children, className = "" }) {
   const ref = useScrollInView();

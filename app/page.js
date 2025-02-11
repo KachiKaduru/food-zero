@@ -6,7 +6,7 @@ import HomeMenuSection from "./_components/HomeMenuSection";
 import NavigationBar from "./_components/NavigationBar";
 import ReservationMini from "./_components/ReservationMini";
 
-export default function Page() {
+export default async function Page() {
   return (
     <main className="bg-primary-300">
       <NavigationBar />

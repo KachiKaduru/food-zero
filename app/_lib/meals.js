@@ -1,5 +1,4 @@
-const meals = [
-  // Starters
+export const meals = [
   {
     name: "Smoked Salmon Tartare with Caviar",
     price: 24.99,
@@ -25,7 +24,7 @@ const meals = [
       "Crispy, golden-brown spring rolls stuffed with tender duck and served with a sweet hoisin dipping sauce.",
     image: "",
     category: "Starter",
-    second_category: "Asian",
+    second_category: "Meat",
   },
   {
     name: "Roasted Beet Carpaccio with Goat Cheese",
@@ -45,7 +44,6 @@ const meals = [
     second_category: "Seafood",
   },
 
-  // Lunch
   {
     name: "Grilled Chilean Sea Bass with Saffron Sauce",
     price: 32.99,
@@ -70,7 +68,7 @@ const meals = [
       "Succulent roasted Cornish hen served with flavorful wild rice and roasted vegetables.",
     image: "",
     category: "Lunch",
-    second_category: "Poultry",
+    second_category: "Meat",
   },
   {
     name: "Seared Tuna Niçoise Salad",
@@ -88,10 +86,9 @@ const meals = [
       "Juicy Wagyu beef patty topped with truffle aioli, arugula, and gruyère cheese, served with crispy fries.",
     image: "",
     category: "Lunch",
-    second_category: "Burgers",
+    second_category: "Meat",
   },
 
-  // Dinner
   {
     name: "Duck à l'Orange with Grand Marnier Sauce",
     price: 34.99,
@@ -99,7 +96,7 @@ const meals = [
       "Crispy duck breast glazed with a tangy Grand Marnier orange sauce, served with roasted potatoes.",
     image: "",
     category: "Dinner",
-    second_category: "Poultry",
+    second_category: "Meat",
   },
   {
     name: "Baked Halibut with Dill Cream Sauce",
@@ -117,7 +114,7 @@ const meals = [
       "Tender, fall-off-the-bone beef short ribs slow-braised in a rich red wine reduction.",
     image: "",
     category: "Dinner",
-    second_category: "Beef",
+    second_category: "Meat",
   },
   {
     name: "Wild Mushroom Tagliatelle with White Truffle Oil",
@@ -138,7 +135,6 @@ const meals = [
     second_category: "Seafood",
   },
 
-  // Drinks
   {
     name: "Classic Negroni with an Orange Twist",
     price: 12.99,
@@ -182,7 +178,6 @@ const meals = [
     second_category: "Cocktails",
   },
 
-  // Sweets
   {
     name: "Dark Chocolate Lava Cake with Raspberry Coulis",
     price: 11.99,
@@ -226,8 +221,6 @@ const meals = [
     category: "Sweets",
     second_category: "Dessert",
   },
-
-  // Fruits
   {
     name: "Poached Pears in Red Wine Reduction",
     price: 9.99,
@@ -262,7 +255,7 @@ const meals = [
       "A refreshing citrus salad featuring oranges, grapefruit, and blood oranges drizzled with hibiscus syrup.",
     image: "",
     category: "Fruits",
-    second_category: "Healthy",
+    second_category: "Vegetarian",
   },
   {
     name: "Baked Apple with Cinnamon and Almond Crumble",
