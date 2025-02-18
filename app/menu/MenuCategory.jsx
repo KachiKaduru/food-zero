@@ -2,17 +2,23 @@ import Image from "next/image";
 import Heading from "@/app/_components/Heading";
 import Subtext from "@/app/_components/Subtext";
 import MenuItem from "@/app/_components/MenuItem";
-import { menuData } from "../_lib/placeholderData";
 import ScrollEffectComponent from "../_components/ScrollEffectComponent";
+import { getMealsByCategory } from "../_lib/data-service";
+import { Avocado } from "../_lib/icons";
 
-export default function MenuCategory({ item }) {
+export default async function MenuCategory({ item }) {
   const { category, img, title, description } = item;
-  const data = menuData.filter((item) => item.category === category);
+
+  const meals = await getMealsByCategory(category);
+  const data = meals.slice(0, 3);
 
   return (
     <section className="py-24">
       <ScrollEffectComponent>
-        <div className="text-center mb-20">
+        <div className="text-center mb-20 relative">
+          {category === "Drinks" && (
+            <Avocado className="absolute top-0 right-1/2 translate-x-1/2 -translate-y-1/2" />
+          )}
           <Heading type="h1">{title}</Heading>
           <Subtext>{description}</Subtext>
         </div>
@@ -20,7 +26,7 @@ export default function MenuCategory({ item }) {
         <div className="grid grid-cols-2 gap-20">
           <div
             className={`grid relative row-span-full ${
-              category === "main" && "col-start-2 col-end-3"
+              category === "Lunch" && "col-start-2 col-end-3"
             }`}
           >
             <Image

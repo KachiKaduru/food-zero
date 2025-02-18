@@ -1,6 +1,6 @@
 import { Carrot, Fish, Fruit } from "./icons";
 import starterImg from "@/public/images/menu/starters-img.jpeg";
-import mainsIng from "@/public/images/menu/mains-img.png";
+import mainsImg from "@/public/images/menu/mains-img.png";
 import drinksImg from "@/public/images/menu/drinks-img.png";
 
 export const menuData = [
@@ -110,21 +110,31 @@ export const featuresData = [
 
 export const categoryData = [
   {
-    category: "starters",
+    category: "Starter",
     img: starterImg,
     title: "Starters",
     description: "This is a section of your menu. Give your section a brief description",
   },
   {
-    category: "main",
-    img: mainsIng,
+    category: "Lunch",
+    img: mainsImg,
     title: "Mains",
     description: "This is a section of your menu. Give your section a brief description",
   },
   {
-    category: "drinks",
+    category: "Drinks",
     img: drinksImg,
     title: "Pastries & Drinks",
     description: "This is a section of your menu. Give your section a brief description",
   },
+];
+
+export const mealsFilter = [
+  { title: "All", type: "all" },
+  { title: "Starter", type: "starters" },
+  { title: "Lunch", type: "lunch" },
+  { title: "Dinner", type: "dinner" },
+  { title: "Sweets", type: "sweets" },
+  { title: "Drinks", type: "drinks" },
+  { title: "Fruits", type: "fruits" },
 ];
