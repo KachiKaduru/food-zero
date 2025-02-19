@@ -3,6 +3,7 @@ import MealsHeader from "./MealsHeader";
 import MealsFilter from "@/app/_components/MealsFilter";
 import MealsList from "./MealsList";
 import { Suspense } from "react";
+import Spinner from "@/app/_components/Spinner";
 
 export const metadata = {
   title: "Meals",
@@ -19,11 +20,9 @@ export default async function MealsPage({ searchParams }) {
       <Container className="py-[120px] grid gap-7">
         <MealsFilter />
 
-        <MealsList filter={filter} />
-
-        {/* fallback={<Spinner />}  */}
-        {/* <Suspense key={filter}>
-        </Suspense> */}
+        <Suspense fallback={<Spinner />} key={filter}>
+          <MealsList filter={filter} />
+        </Suspense>
       </Container>
     </div>
   );
