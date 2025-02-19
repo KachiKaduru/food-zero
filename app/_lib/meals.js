@@ -1,4 +1,5 @@
 export const meals = [
+  //starters
   {
     name: "Smoked Salmon Tartare with Caviar",
     price: 24.99,
@@ -44,6 +45,7 @@ export const meals = [
     second_category: "Seafood",
   },
 
+  //lunch
   {
     name: "Grilled Chilean Sea Bass with Saffron Sauce",
     price: 32.99,
@@ -89,6 +91,7 @@ export const meals = [
     second_category: "Meat",
   },
 
+  //dinner
   {
     name: "Duck à l'Orange with Grand Marnier Sauce",
     price: 34.99,
@@ -135,6 +138,7 @@ export const meals = [
     second_category: "Seafood",
   },
 
+  //drinks
   {
     name: "Classic Negroni with an Orange Twist",
     price: 12.99,
@@ -178,6 +182,7 @@ export const meals = [
     second_category: "Cocktails",
   },
 
+  //sweets
   {
     name: "Dark Chocolate Lava Cake with Raspberry Coulis",
     price: 11.99,
@@ -221,6 +226,8 @@ export const meals = [
     category: "Sweets",
     second_category: "Dessert",
   },
+
+  //fruits
   {
     name: "Poached Pears in Red Wine Reduction",
     price: 9.99,

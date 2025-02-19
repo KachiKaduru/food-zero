@@ -1,5 +1,4 @@
-import Container from "@/app/_components/Container";
-import Heading from "@/app/_components/Heading";
+import MealItem from "@/app/_components/MealItem";
 import { getMeals } from "@/app/_lib/data-service";
 import { mealsFilter } from "@/app/_lib/placeholderData";
 
@@ -9,15 +8,9 @@ export default async function MealsList({ filter }) {
   const displayedMeals = filter === "all" ? meals : meals.filter((meal) => meal.category === title);
 
   return (
-    <div>
+    <div className="grid grid-cols-3 grid-rows-[400px,400px]">
       {displayedMeals.map((meal, i) => (
-        <div key={i}>
-          <p>{i + 1}. </p>
-          <Heading type="h4">{meal.name}</Heading>
-          <p>
-            Categories: {meal.category}, {meal.second_category}
-          </p>
-        </div>
+        <MealItem meal={meal} key={i} />
       ))}
     </div>
   );
