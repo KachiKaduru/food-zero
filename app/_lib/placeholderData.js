@@ -10,6 +10,7 @@ export const menuData = [
     price: 100,
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
     category: "main",
+    filter: "starters",
   },
   {
     id: 2,
@@ -111,18 +112,21 @@ export const featuresData = [
 export const categoryData = [
   {
     category: "Starter",
+    filter: "starters",
     img: starterImg,
     title: "Starters",
     description: "This is a section of your menu. Give your section a brief description",
   },
   {
     category: "Lunch",
+    filter: "lunch",
     img: mainsImg,
     title: "Mains",
     description: "This is a section of your menu. Give your section a brief description",
   },
   {
     category: "Drinks",
+    filter: "drinks",
     img: drinksImg,
     title: "Pastries & Drinks",
     description: "This is a section of your menu. Give your section a brief description",

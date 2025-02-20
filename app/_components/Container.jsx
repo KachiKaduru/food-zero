@@ -1,3 +1,7 @@
-export default function Container({ className = "", children }) {
-  return <div className={`max-w-7xl mx-auto ${className} px-3`}>{children}</div>;
+export default function Container({ className = "", children, id = "" }) {
+  return (
+    <div id={id} className={`max-w-7xl mx-auto ${className} px-3`}>
+      {children}
+    </div>
+  );
 }

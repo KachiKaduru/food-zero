@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import MealItem from "./MealItem";
 import { lato } from "../_fonts/fonts";
-import MealsGridContainer from "./MealsGridContainer";
+import Spinner from "./Spinner";
 
 export default function PaginatedMenu({ meals, filter }) {
   const [currentPage, setCurrentPage] = useState(1);
@@ -25,7 +25,7 @@ export default function PaginatedMenu({ meals, filter }) {
     <section className="grid gap-14">
       <div className="menu-grid">
         {displayedMeals.map((meal, i) => (
-          <MealItem meal={meal} key={i} className="menu-grid-item" />
+          <MealItem meal={meal} key={i} />
         ))}
       </div>
 

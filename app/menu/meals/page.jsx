@@ -17,7 +17,7 @@ export default async function MealsPage({ searchParams }) {
     <div>
       <MealsHeader />
 
-      <Container className="py-[120px] grid gap-7">
+      <Container id="#meals" className="py-[120px] grid gap-7">
         <MealsFilter />
 
         <Suspense fallback={<Spinner />} key={filter}>
