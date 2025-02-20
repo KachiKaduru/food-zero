@@ -142,3 +142,43 @@ export const mealsFilter = [
   { title: "Drinks", type: "drinks" },
   { title: "Fruits", type: "fruits" },
 ];
+
+export const blogsData = [
+  {
+    id: "1a2b3c4d-5678-9101-1121-314151617181",
+    title: "The Art of Cooking with Truffle Oil",
+    content: "Truffle oil adds a rich and luxurious flavor to any dish...",
+    image:
+      "https://unsplash.com/photos/person-slicing-green-vegetable-in-front-of-round-ceramic-plates-with-assorted-sliced-vegetables-during-daytime-EzH46XCDQRY",
+    author_id: "user-123",
+    author_name: "John Doe",
+    created_at: "2025-02-20T12:00:00.000Z",
+    likes: 15,
+    category: "Food",
+    tags: ["Gourmet", "Truffle", "Cooking"],
+  },
+  {
+    id: "5e6f7g8h-9101-1121-3141-516171819202",
+    title: "How to Make the Perfect Espresso",
+    content: "A great espresso is all about precision...",
+    image: "https://unsplash.com/photos/assorted-condiment-lot--bLkT8wGV0I",
+    author_id: "user-456",
+    author_name: "Jane Smith",
+    created_at: "2025-02-19T10:30:00.000Z",
+    likes: 27,
+    category: "Drinks",
+    tags: ["Coffee", "Barista", "Espresso"],
+  },
+  {
+    id: "9i0j1k2l-3141-5161-7181-920212223242",
+    title: "The Science Behind Sourdough Bread",
+    content: "Sourdough bread is made using a natural fermentation process...",
+    image: "https://unsplash.com/photos/sandwich-with-boiled-egg-fdlZBWIP0aM",
+    author_id: "user-789",
+    author_name: "Alice Baker",
+    created_at: "2025-02-18T08:45:00.000Z",
+    likes: 12,
+    category: "Baking",
+    tags: ["Bread", "Fermentation", "Baking"],
+  },
+];

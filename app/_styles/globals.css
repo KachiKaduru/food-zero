@@ -60,9 +60,11 @@
   grid-auto-rows: 400px;
   gap: 1rem;
 
+  .x {
+  }
+
   .menu-grid-item {
-    .x {
-    }
+    background: rgba(0, 0, 0, 0.213);
 
     &:nth-child(6n + 1),
     &:nth-child(6n + 4) {

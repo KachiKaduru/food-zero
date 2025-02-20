@@ -1,5 +1,17 @@
 import { supabase } from "./supabase";
 
+export function formatDate(date) {
+  const newDate = new Date(date);
+
+  const formattedDate = newDate.toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+
+  return formattedDate;
+}
+
 export async function getMeals() {
   const { data, error } = await supabase.from("meals").select("*").order("id");
 

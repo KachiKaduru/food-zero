@@ -7,7 +7,7 @@ export default function MealItem({ meal, className = "" }) {
 
   return (
     <div
-      className={`menu-grid-item ${className} relative opacity-0 animate-fadeIn h-full w-full grid items-end bg-accent-300 bg-opacity-30`}
+      className={`menu-grid-item ${className} relative opacity-0 animate-fadeIn h-full w-full grid items-end`}
     >
       <Image src={image} alt={name} fill className=" flex-1 object-cover object-center -z-10" />
 

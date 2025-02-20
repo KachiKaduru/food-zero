@@ -1,5 +1,6 @@
 import Header from "@/app/_components/Header";
 import headerImg from "@/public/images/blog-header.jpeg";
+import BlogsList from "./BlogsList";
 
 export const metadata = {
   title: "Blog",
@@ -10,7 +11,7 @@ export default function BlogPage() {
     <div>
       <Header img={headerImg} />
 
-      <h2>Blog page</h2>
+      <BlogsList />
     </div>
   );
 }
