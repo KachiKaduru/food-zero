@@ -46,7 +46,7 @@ function PaginationControl({ totalPages, setCurrentPage, currentPage }) {
           key={i}
           className={`${
             lato.className
-          } text-2xl font-semibold px-6 py-4 text-accent-50 hover:bg-primary-200 ${
+          } text-xl font-semibold px-4 py-2 text-accent-50 hover:bg-primary-200 ${
             currentPage === i + 1 ? "bg-primary-200" : "bg-primary-100"
           }`}
           onClick={() => setCurrentPage(i + 1)}
