@@ -1,14 +1,17 @@
 import Link from "next/link";
 import Logo from "./Logo";
 import Container from "./Container";
+import MenuButton from "./MenuButton";
 
 export default function NavigationBar() {
   return (
-    <nav className="z-10 py-12 px-[100px]">
+    <nav className="z-10 py-8 md:py-12 px-8 sm:px-16 md:px-[100px]">
       <Container className="flex justify-between items-center ">
         <Logo />
 
-        <ul className="flex gap-10 text-white text-xl">
+        <MenuButton className="md:hidden" />
+
+        <ul className="hidden md:flex gap-10 text-white text-xl">
           <li>
             <Link href="/menu">Menu</Link>
           </li>
