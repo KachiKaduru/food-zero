@@ -6,6 +6,10 @@ import Link from "next/link";
 
 export default function BlogPost({ post }) {
   const { id, created_at, author_name, content, title, image } = post;
+  const slug = title
+    .toLowerCase()
+    .replace(/\s+/g, "-")
+    .replace(/[^\w-]+/g, "");
 
   return (
     <div className="grid grid-cols-2 gap-10">
@@ -28,7 +32,7 @@ export default function BlogPost({ post }) {
         </div>
         <Heading type="h4">{title}</Heading>
         <hr className="my-4 h-[2px]" />
-        <Subtext>{content.sections[0].introduction}</Subtext>
+        <Subtext>{content}</Subtext>
 
         <Link href={`/blogs/${id}`}>
           <Heading type="h6">Read more &rarr;</Heading>
